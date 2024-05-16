@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #fff;
+    color: #000;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li:not(:first-child) {
+    margin-left: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.start-project,
+.start-projectp {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.start-project {
+    width: auto;
+    border-radius: 20px;
+}
+
+.start-projectp {
+    width: 9px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#show-tell-link {
+    margin-right: 530px;
+}
+
+nav ul li:hover {
+    animation: scrollAnimation 0.5s ;
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-3px);
+    }
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.text-container {
+    width: 50%;
+    font-size: 35px;
+    padding-top: 30vh;
+}
+
+.video-container {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+#link {
+    color: black;
+    font-size: medium;
+    animation: scrollAnimation 0.5s ;
+    text-decoration: underline;
+}
+.text-section2 {
+    padding: 15%;
+    font-size: 50px;
+    text-align: center;
+}
+
+.work-section {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.work-header {
+    font-size: 45vh;
+    margin-bottom: 20px;
+}
+
+.scrolling-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.scrolling-item {
+    font-family: IvyPresto;
+    font-size: 25px;
+    flex: 0 0 auto;
+    margin-right: 40px;
+    transition: transform 0.3s ease;
+}
+.scrolling-item p {
+    padding-top: 30px;
+}
+.scrolling-item img:hover {
+    transform: scale(1.1);
+}
+
+.scrolling-item img {
+    width: 400px;
+    height: 400px;
+}
+
+.moving-text-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100px;
+}
+
+.moving-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-size: 36px;
+    z-index: 2;
+    animation: moveLeftToRight 10s linear infinite;
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+* {
+    cursor: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-size: 40px;
+}
+
+a {
+    font-family: Montserrat;
+    position: relative;
+    text-decoration: none;
+}
+
+a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 0px;
+    left: 0%;
+    background: black;
+    transition: width .3s ease;
+}
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid black;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+}
+
+.cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: black;
+    opacity: .3;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+}
+
+.hover {
+    background-color: black;
+    opacity: 0.5;
+}
+
+.cursorinnerhover {
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+}

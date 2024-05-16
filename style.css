@@ -152,23 +152,13 @@ nav ul li:hover {
     height: 400px;
 }
 
-.moving-text-section {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    height: 100px;
+marquee{
+    font-size: 10rem;
+    color: #333;
+    top: 40px;
+    position: absolute;
 }
 
-.moving-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-    font-size: 36px;
-    z-index: 2;
-    animation: moveLeftToRight 10s linear infinite;
-}
 
 @keyframes moveLeftToRight {
     0% {
@@ -185,6 +175,10 @@ nav ul li:hover {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 section {
@@ -201,7 +195,7 @@ h1 {
 }
 
 a {
-    font-family: Montserrat;
+    font-family: Dosis;
     position: relative;
     text-decoration: none;
 }
@@ -252,4 +246,10 @@ a:after {
     width: 50px;
     height: 50px;
     opacity: .5;
+}
+.topbutton{
+    background-color: black;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
 }

@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Front-End Battle Round 1</title>
-    <style>
-    </style>
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -15,7 +20,7 @@
     <div class="cursor2"></div>
     <nav>
         <ul>
-            <li id="show-tell-link" style="font-size: 30px;"><a href="#"><b>Show + Tell</b><span
+            <li id="show-tell-link" style="font-size: 30px; "><a href="#"><b>Show + Tell</b><span
                         style="font-size: 9px;"> TM</span></a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#studio">Studio</a></li>
@@ -23,22 +28,23 @@
             <li><a href="#sectors">Sectors</a></li>
             <li><a href="#insights">Insights</a></li>
             <li><a href="#careers">Careers</a></li>
-            <li><a href="#start-project" class="start-project">Start a project</a></li>
-            <li><a href="#start-project" class="start-projectp">+</a></li>
+            <li><span class="topbutton">Start a project</span> <span class="topbutton" id="circle">
+                    +<i class="ri-arrow-right-up-line"></i></span></li>
         </ul>
     </nav>
-    <div class="moving-text-section">
-        <div class="moving-text">
-            <p>We make every interaction count + We make every interaction count + We make every interaction count</p>
-        </div>
-    </div>
+
     <div class="content-container">
         <div class="text-container">
             <p>A digital-first branding & web product agency expertly creating impactful experiences for high-growth
                 brands.</p>
-                <br>
-                <a onclick="scrollToDiv('section2')" id="link"> Scholl + explore</a>
+            <br>
+            <a onclick="scrollToDiv('section2')" id="link"> Scroll + explore</a>
         </div>
+        <marquee scrollamount="20" loop>We Make Every Interaction Count ✦ We Make Every Interaction Count ✦ We Make
+            Every Interaction Count ✦ We Make Every Interaction Count ✦ We Make Every Interaction Count ✦ We Make Every
+            Interaction Count ✦ We Make Every Interaction Count ✦ We Make Every Interaction Count ✦ We Make Every
+            Interaction Count ✦ We Make Every Interaction Count ✦ We Make Every Interaction Count ✦ We Make Every
+            Interaction Count ✦ We Make Every Interaction Count ✦</marquee>
         <div class="video-container">
             <video autoplay muted loop>
                 <source src="./src/Video Player.mp4" type="video/mp4">
@@ -47,9 +53,10 @@
         </div>
     </div>
     <div class="text-section2" id="section2" style="font-family:IvyPresto;">
-        <p>Show + Tell is a <span style="font-weight: bold;">(DIGITAL-FIRST)</span> branding and technology agency,
-            enabling companies to connect with their audience, extend their reach, and enjoy greater <span
-                style="font-weight: bold;">(COMMERCIAL)</span> SUCCESS</p>
+        <p>Show + Tell is a <span style="font-weight: bold;  border: 2px solid black;
+            border-radius: 50px;">DIGITAL-FIRST</span> branding and technology agency,
+            enabling companies to connect with their audience, extend their reach, and enjoy greater <span style="font-weight: bold;  border: 2px solid black;
+                border-radius: 50px;"> COMMERCIAL </span> SUCCESS</p>
     </div>
     <div class="work-section">
         <div class="work-header" style="font-family: TWKEverett_033e5b;">WORK</div>
